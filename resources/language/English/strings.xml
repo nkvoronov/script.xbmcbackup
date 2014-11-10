@@ -84,4 +84,9 @@
     <string id="30090">The destination may not be writeable</string>
     <string id="30091">Zip archive could not be copied</string>
     <string id="30092">Not all files were copied</string>
+    <string id="30093">Run Script After Save</string>
+    <string id="30094">Run Script After Restore</string>
+    <string id="30095">Advanced</string>
+    <string id="30096">Running Post-Save Script</string>
+    <string id="30097">Running Post-Restore Script</string>
 </strings>

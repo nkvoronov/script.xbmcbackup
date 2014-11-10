@@ -31,4 +31,10 @@
 		<setting id="cron_schedule" type="text" label="30064" default="0 0 * * *" visible="eq(-3,4)"  enable="eq(-4,true)"/>
 		<setting id="cron_shutdown" type="bool" label="30076" default="false" enable="eq(-5,true)" />
 	</category>
+	<category id="advanced" label="30095">
+	    <setting id="script_save_enable" type="bool" label="30093" default="false" />
+        <setting id="script_save_path" type="file" label="30018" default="" visible="eq(-1,true)"/>
+        <setting id="script_restore_enable" type="bool" label="30094" default="false" />
+        <setting id="script_restore_path" type="file" label="30018" default="" visible="eq(-1,true)"/>
+	</category>
 </settings>

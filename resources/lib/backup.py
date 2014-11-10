@@ -4,6 +4,7 @@ import xbmcvfs
 import utils as utils
 import time
 import json
+import subprocess
 from vfs import XBMCFileSystem,DropboxFileSystem,ZipFileSystem
 from resources.lib.guisettings import GuiSettingsManager
 
@@ -278,6 +279,13 @@ class XbmcBackup:
 
             #remove old backups
             self._rotateBackups()
+            
+            #check if we should run a script
+            if(utils.getSetting('script_save_enable') == 'true' and utils.getSetting('script_save_path') != ''):
+                #run the script
+                self.progressBar.updateProgress(100, utils.getString(30096))
+                utils.log("Running Post-Backup Script " + utils.getSetting("script_save_path"))
+                subprocess.call(utils.getSetting("script_save_path"))
 
         elif (mode == self.Restore):
             utils.log(utils.getString(30023) + " - " + utils.getString(30017))
@@ -435,6 +443,13 @@ class XbmcBackup:
         self.xbmc_vfs.cleanup()
         self.remote_vfs.cleanup()
         self.progressBar.close()
+
+        #check if we should run a script
+        if(utils.getSetting('script_restore_enable') == 'true' and utils.getSetting('script_restore_path') != ''):
+            #run the script
+            self.progressBar.updateProgress(100, utils.getString(30097))
+            utils.log("Running Post-Restore Script " + utils.getSetting("script_restore_path"))
+            subprocess.call(utils.getSetting("script_restore_path"))
 
         #reset the window setting
         window.setProperty(utils.__addon_id__ + ".running","")
