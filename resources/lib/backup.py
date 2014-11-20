@@ -285,7 +285,7 @@ class XbmcBackup:
                 #run the script
                 self.progressBar.updateProgress(100, utils.getString(30096))
                 utils.log("Running Post-Backup Script " + utils.getSetting("script_save_path"))
-                subprocess.call(utils.getSetting("script_save_path"))
+                subprocess.Popen([utils.getSetting("script_save_path"),xbmc.translatePath('special://home'), xbmc.translatePath('special://xbmc')],close_fds=True)
 
         elif (mode == self.Restore):
             utils.log(utils.getString(30023) + " - " + utils.getString(30017))
@@ -449,7 +449,7 @@ class XbmcBackup:
             #run the script
             self.progressBar.updateProgress(100, utils.getString(30097))
             utils.log("Running Post-Restore Script " + utils.getSetting("script_restore_path"))
-            subprocess.call(utils.getSetting("script_restore_path"))
+            subprocess.Popen([utils.getSetting("script_restore_path"),xbmc.translatePath('special://home'),xbmc.translatePath('special://xbmc')],close_fds=True)
 
         #reset the window setting
         window.setProperty(utils.__addon_id__ + ".running","")
