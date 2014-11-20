@@ -1,3 +1,5 @@
+rem BATCH FILE TO CLOSE XBMC, COPY GUISETTINGS, AND RELAUNCH
+
 Setlocal EnableDelayedExpansion
 set XBMC_PROFILE=%1
 set XBMC_PATH=%2
