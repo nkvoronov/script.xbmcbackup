@@ -82,6 +82,14 @@ while (window.getProperty('script.xbmcbackup.running') == 'true'):
 
 #backup is now done, continue with script
 -------------------------------------------
+
+
+Advanced Post-Backup/Restore Scripts
+
+For more advanced users can you select batch or shell (depending on platform) scripts to run after the execution of either Backup or Restore processes. This can do some additional processing or notifications that you may want. These scripts will be executed after the successful conclusion of either a backup or restore (depending on your choices) that are run manually or scheduled. The scripts will get passed 2 arguments. The first is the path to the xbmc profile folder, or special://home. The second is the path to the xbmc install folder or special://xbmc. This way your scripts can interact with the xbmc file system if needed. 
+
+In the special://home/addons/script.xbmcbackup/bin folder there are some pre-canned scripts for guisettings restoration. When restoring the guisettings file Backup Addon will create a guisettings.xml.restored file. These scripts are platform dependant and attempt to stop xbmc, copy this file to guisettings.xml, and restart xbmc. These are an attempt to get around the fact that xbmc cannot restore the guisettings file while the program is running. Please use at your own risk. 
+
 FAQ: 
 
 I can't see any restore points when choosing "Restore", what is the problem? 
