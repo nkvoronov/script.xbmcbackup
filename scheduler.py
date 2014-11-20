@@ -3,7 +3,8 @@ import xbmcvfs
 import xbmcgui
 import datetime
 import time
-import os
+import subprocess
+import sys
 import resources.lib.utils as utils
 from resources.lib.croniter import croniter
 from resources.lib.backup import XbmcBackup
@@ -17,6 +18,10 @@ class BackupScheduler:
     def __init__(self):
         self.monitor = UpdateMonitor(update_method = self.settingsChanged)
         self.enabled = utils.getSetting("enable_scheduler")
+        
+        #set permissions on scripts in the bin directory for linux type platforms
+        if("linux" in sys.platform):
+            subprocess.Popen(["chmod","a+rx",xbmc.translatePath(utils.addon_dir() + "/bin")]);
 
         if(self.enabled == "true"):
             self.setup()
