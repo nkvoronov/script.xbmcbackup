@@ -480,9 +480,10 @@ class XbmcBackup:
                     else:
                         #copy using normal method
                         wroteFile = dest.put(aFile,dest.root_path + aFile[len(source.root_path):])
-                    
+        
                     #if result is still true but this file failed
                     if(not wroteFile and result):
+                        utils.log('Error writing: ' + aFile,xbmc.LOGDEBUG)
                         result = False
                         
                         
