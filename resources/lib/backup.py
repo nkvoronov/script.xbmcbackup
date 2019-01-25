@@ -9,7 +9,7 @@ from progressbar import BackupProgressBar
 from resources.lib.guisettings import GuiSettingsManager
 from resources.lib.extractor import ZipExtractor
 
-libreelec_backup_dirs = ['/storage/.cache', '/storage/.config', '/storage/.ssh']
+libreelec_backup_dirs = {'cache': '/storage/.cache', 'config': '/storage/.config', 'ssh': '/storage/.ssh'}
 
 def folderSort(aKey):
     result = aKey[0]
@@ -232,47 +232,47 @@ class XbmcBackup:
 
                 #create a special remote path with hash
                 self.xbmc_vfs.set_root(utils.getSetting('backup_custom_dir_1'))
-                fileManager.addFile("-custom_" + self._createCRC(self.xbmc_vfs.root_path))
+                fileManager.addFile("-custom_1_" + self._createCRC(self.xbmc_vfs.root_path))
 
                 #walk the directory
                 fileManager.walkTree(self.xbmc_vfs.root_path)
                 self.filesTotal = self.filesTotal + fileManager.size()
-                allFiles.append({"source":self.xbmc_vfs.root_path,"dest":self.remote_vfs.root_path + "custom_" + self._createCRC(self.xbmc_vfs.root_path),"files":fileManager.getFiles()})
+                allFiles.append({"source":self.xbmc_vfs.root_path,"dest":self.remote_vfs.root_path + "custom_1_" + self._createCRC(self.xbmc_vfs.root_path),"files":fileManager.getFiles()})
 
             if(utils.getSetting('custom_dir_2_enable') == 'true' and utils.getSetting('backup_custom_dir_2') != ''):
 
                 #create a special remote path with hash
                 self.xbmc_vfs.set_root(utils.getSetting('backup_custom_dir_2'))
-                fileManager.addFile("-custom_" + self._createCRC(self.xbmc_vfs.root_path))
+                fileManager.addFile("-custom_2_" + self._createCRC(self.xbmc_vfs.root_path))
 
                 #walk the directory
                 fileManager.walkTree(self.xbmc_vfs.root_path)
                 self.filesTotal = self.filesTotal + fileManager.size()
-                allFiles.append({"source":self.xbmc_vfs.root_path,"dest":self.remote_vfs.root_path + "custom_" + self._createCRC(self.xbmc_vfs.root_path),"files":fileManager.getFiles()})
+                allFiles.append({"source":self.xbmc_vfs.root_path,"dest":self.remote_vfs.root_path + "custom_2_" + self._createCRC(self.xbmc_vfs.root_path),"files":fileManager.getFiles()})
                 
             if(utils.getSetting('custom_dir_3_enable') == 'true' and utils.getSetting('backup_custom_dir_3') != ''):
 
                 #create a special remote path with hash
                 self.xbmc_vfs.set_root(utils.getSetting('backup_custom_dir_3'))
-                fileManager.addFile("-custom_" + self._createCRC(self.xbmc_vfs.root_path))
+                fileManager.addFile("-custom_3_" + self._createCRC(self.xbmc_vfs.root_path))
 
                 #walk the directory
                 fileManager.walkTree(self.xbmc_vfs.root_path)
                 self.filesTotal = self.filesTotal + fileManager.size()
-                allFiles.append({"source":self.xbmc_vfs.root_path,"dest":self.remote_vfs.root_path + "custom_" + self._createCRC(self.xbmc_vfs.root_path),"files":fileManager.getFiles()})
+                allFiles.append({"source":self.xbmc_vfs.root_path,"dest":self.remote_vfs.root_path + "custom_3_" + self._createCRC(self.xbmc_vfs.root_path),"files":fileManager.getFiles()})
 
             if (utils.getSetting('backup_libreelec_dir_enable') == 'true' and (xbmc.getCondVisibility('System.HasAddon(service.libreelec.settings)') or xbmc.getCondVisibility('System.HasAddon(service.coreelec.settings)'))):
 
-                for dirs in libreelec_backup_dirs:
+                for names,dirs in libreelec_backup_dirs.items():
 
                     #create a special remote path with hash
                     self.xbmc_vfs.set_root(dirs)
-                    fileManager.addFile("-libreelec_" + self._createCRC(self.xbmc_vfs.root_path))
+                    fileManager.addFile("-libreelec_" + names+"_" + self._createCRC(self.xbmc_vfs.root_path))
 
                     #walk the directory
                     fileManager.walkTree(self.xbmc_vfs.root_path)
                     self.filesTotal = self.filesTotal + fileManager.size()
-                    allFiles.append({"source":self.xbmc_vfs.root_path,"dest":self.remote_vfs.root_path + "libreelec_" + self._createCRC(self.xbmc_vfs.root_path),"files":fileManager.getFiles()})
+                    allFiles.append({"source":self.xbmc_vfs.root_path,"dest":self.remote_vfs.root_path + "libreelec_" + names+"_" + self._createCRC(self.xbmc_vfs.root_path),"files":fileManager.getFiles()})
 
             #backup all the files
             self.filesLeft = self.filesTotal
