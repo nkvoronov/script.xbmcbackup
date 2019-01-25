@@ -29,6 +29,7 @@
 		<setting id="backup_custom_dir_1" type="folder" label="30018" default="" visible="eq(-1,true)"/>
 		<setting id="custom_dir_2_enable" type="bool" label="30037" default="false" />
 		<setting id="backup_custom_dir_2" type="folder" label="30018" default="" visible="eq(-1,true)"/>
+        <setting id="backup_libreelec_dir_enable" type="bool" label="30110" default="true" visible="System.HasAddon(service.libreelec.settings) | System.HasAddon(service.coreelec.settings)"/>
 	</category>
 	<category id="scheduling" label="30013">
 		<setting id="enable_scheduler" type="bool" label="30060" default="false" />

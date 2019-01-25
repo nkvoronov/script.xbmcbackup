@@ -391,3 +391,7 @@ msgstr "Извлекаем архив"
 msgctxt "#30101"
 msgid "Error extracting the zip archive"
 msgstr "Ошибка при распаковке ZIP архива"
+
+msgctxt "#30110"
+msgid ""LibreELEC/CoreELEC Directorys"
+msgstr "Каталоги LibreELEC/CoreELEC"

@@ -420,3 +420,8 @@ msgstr "Visit https://console.developers.google.com/"
 msgctxt "#30109"
 msgid "Run on startup if missed"
 msgstr "Run on startup if missed"
+
+msgctxt "#30110"
+msgid ""LibreELEC/CoreELEC Directorys"
+msgstr "LibreELEC/CoreELEC Directorys"
+
