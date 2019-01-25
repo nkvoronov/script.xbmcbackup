@@ -422,6 +422,10 @@ msgid "Run on startup if missed"
 msgstr "Run on startup if missed"
 
 msgctxt "#30110"
+msgid "Custom Directory 3"
+msgstr "Custom Directory 3"
+
+msgctxt "#30111"
 msgid ""LibreELEC/CoreELEC Directorys"
 msgstr "LibreELEC/CoreELEC Directorys"
 

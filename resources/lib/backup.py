@@ -249,8 +249,19 @@ class XbmcBackup:
                 fileManager.walkTree(self.xbmc_vfs.root_path)
                 self.filesTotal = self.filesTotal + fileManager.size()
                 allFiles.append({"source":self.xbmc_vfs.root_path,"dest":self.remote_vfs.root_path + "custom_" + self._createCRC(self.xbmc_vfs.root_path),"files":fileManager.getFiles()})
+                
+            if(utils.getSetting('custom_dir_3_enable') == 'true' and utils.getSetting('backup_custom_dir_3') != ''):
 
-            if(utils.getSetting('backup_libreelec_dir_enable') == 'true':
+                #create a special remote path with hash
+                self.xbmc_vfs.set_root(utils.getSetting('backup_custom_dir_3'))
+                fileManager.addFile("-custom_" + self._createCRC(self.xbmc_vfs.root_path))
+
+                #walk the directory
+                fileManager.walkTree(self.xbmc_vfs.root_path)
+                self.filesTotal = self.filesTotal + fileManager.size()
+                allFiles.append({"source":self.xbmc_vfs.root_path,"dest":self.remote_vfs.root_path + "custom_" + self._createCRC(self.xbmc_vfs.root_path),"files":fileManager.getFiles()})
+
+            if (utils.getSetting('backup_libreelec_dir_enable') == 'true' and (xbmc.getCondVisibility('System.HasAddon(service.libreelec.settings)') or xbmc.getCondVisibility('System.HasAddon(service.coreelec.settings)'))):
 
                 for dirs in libreelec_backup_dirs:
 

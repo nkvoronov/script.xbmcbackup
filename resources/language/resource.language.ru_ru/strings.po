@@ -393,5 +393,9 @@ msgid "Error extracting the zip archive"
 msgstr "Ошибка при распаковке ZIP архива"
 
 msgctxt "#30110"
+msgid "Custom Directory 3"
+msgstr "Пользовательский каталог 3"
+
+msgctxt "#30111"
 msgid ""LibreELEC/CoreELEC Directorys"
 msgstr "Каталоги LibreELEC/CoreELEC"
