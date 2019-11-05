@@ -1,11 +1,8 @@
 # Kodi Media Center language file
 # Addon Name: Backup
 # Addon id: script.xbmcbackup
-# Addon Provider: robweber
+# Addon Provider: robweber, YLLOW_DRAGON
 # Translators:
-# Dmitry Vilesov <vilesovds@gmail.com>, 2014
-# Serge Rodionov <buzzzzer@gmail.com>, 2014,2016
-# TotalCaesar659 <x24cm5b8c54q6szxw@yandex.ru>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Addons\n"
@@ -13,11 +10,11 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2017-09-19 14:20+0000\n"
 "Last-Translator: TotalCaesar659 <x24cm5b8c54q6szxw@yandex.ru>\n"
-"Language-Team: Russian (http://www.transifex.com/teamxbmc/xbmc-addons/language/ru/)\n"
+"Language-Team: Russian (http://www.transifex.com/teamxbmc/xbmc-addons/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru\n"
+"Language: ru_RU\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 msgctxt "Addon Summary"
@@ -346,7 +343,7 @@ msgstr "Обнаружена ошибка записи"
 
 msgctxt "#30090"
 msgid "The destination may not be writeable"
-msgstr "Место назначения не доступно для звписи"
+msgstr "Место назначения не доступно для записи"
 
 msgctxt "#30091"
 msgid "Zip archive could not be copied"
@@ -391,6 +388,38 @@ msgstr "Извлекаем архив"
 msgctxt "#30101"
 msgid "Error extracting the zip archive"
 msgstr "Ошибка при распаковке ZIP архива"
+
+msgctxt "#30102"
+msgid "Click OK to enter code"
+msgstr "Нажмите OK, чтобы ввести код"
+
+msgctxt "#30103"
+msgid "Validation Code"
+msgstr "Код проверки"
+
+msgctxt "#30104"
+msgid "Authorize Now"
+msgstr "Авторизуйтесь сейчас"
+
+msgctxt "#30105"
+msgid "Authorize this remote service in the settings first"
+msgstr "Сначала авторизуйте этот удаленный сервис в настройках"
+
+msgctxt "#30106"
+msgid "is authorized"
+msgstr "авторизован"
+
+msgctxt "#30107"
+msgid "error authorizing"
+msgstr "ошибка авторизации"
+
+msgctxt "#30108"
+msgid "Visit https://console.developers.google.com/"
+msgstr "Посетите https://console.developers.google.com/"
+
+msgctxt "#30109"
+msgid "Run on startup if missed"
+msgstr "Запустить при запуске, если пропустил"
 
 msgctxt "#30110"
 msgid "Custom Directory 3"

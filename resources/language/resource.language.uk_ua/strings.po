@@ -1,7 +1,7 @@
 # Kodi Media Center language file
 # Addon Name: Backup
 # Addon id: script.xbmcbackup
-# Addon Provider: robweber
+# Addon Provider: robweber, YLLOW_DRAGON
 # Translators:
 msgid ""
 msgstr ""
@@ -10,18 +10,18 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2017-09-19 14:20+0000\n"
 "Last-Translator: Martijn Kaijser <machine.sanctum@gmail.com>\n"
-"Language-Team: Ukrainian (http://www.transifex.com/teamxbmc/xbmc-addons/language/uk/)\n"
+"Language-Team: Ukrainian (http://www.transifex.com/teamxbmc/xbmc-addons/language/uk_UA/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk\n"
+"Language: uk_UA\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 msgctxt "Addon Summary"
 msgid ""
 "Backup and restore your Kodi database and configuration files in the event "
 "of a crash or file corruption."
-msgstr ""
+msgstr "Зберігайте і відновлюйте базу даних і конфігураційні файли XBMC, щоб не допустити втрату даних у разі аварії або пошкоджень файлів."
 
 msgctxt "Addon Description"
 msgid ""
@@ -30,11 +30,11 @@ msgid ""
 " addons and other configuration details to any source writeable by Kodi or "
 "directly to Dropbox cloud storage. Backups can be run on demand or via a "
 "scheduler. "
-msgstr ""
+msgstr "Хочете отримати резервну копію налаштувань XBMC? Тепер можете це зробити одним кліком миші. Ви можете вивантажити вашу базу даних, плейлисти, ескізи, доповнення та іншу потрібну Вам інформацію і зберегти її за допомогою XBMC або вивантажити в хмарне сховище Dropbox. Резервну копію можна зробити на вимогу або запускати за розкладом."
 
 msgctxt "#30010"
 msgid "Backup"
-msgstr ""
+msgstr "Резервна копія Kodi"
 
 msgctxt "#30011"
 msgid "General"
@@ -42,39 +42,39 @@ msgstr "Загальні"
 
 msgctxt "#30012"
 msgid "File Selection"
-msgstr ""
+msgstr "Типи файлів"
 
 msgctxt "#30013"
 msgid "Scheduling"
-msgstr ""
+msgstr "Розклад"
 
 msgctxt "#30016"
 msgid "Backup"
-msgstr ""
+msgstr "Резервна копія"
 
 msgctxt "#30017"
 msgid "Restore"
-msgstr ""
+msgstr "Всстановіть"
 
 msgctxt "#30018"
 msgid "Browse Path"
-msgstr ""
+msgstr "Вибрати шлях"
 
 msgctxt "#30019"
 msgid "Type Path"
-msgstr ""
+msgstr "Ручний ввід"
 
 msgctxt "#30020"
 msgid "Browse Remote Path"
-msgstr ""
+msgstr "Вибрати мережевий шлях"
 
 msgctxt "#30021"
 msgid "Backup Folder Name"
-msgstr ""
+msgstr "Ім'я папки з резервними копіями"
 
 msgctxt "#30022"
 msgid "Progress Display"
-msgstr ""
+msgstr "Вікно з ходом виконання"
 
 msgctxt "#30023"
 msgid "Mode"
@@ -82,35 +82,35 @@ msgstr "Режим"
 
 msgctxt "#30024"
 msgid "Type Remote Path"
-msgstr ""
+msgstr "Ввести мережевий шлях"
 
 msgctxt "#30025"
 msgid "Remote Path Type"
-msgstr ""
+msgstr "Ручне введення віддаленого шляху"
 
 msgctxt "#30026"
 msgid "Backups to keep (0 for all)"
-msgstr ""
+msgstr "Кількість резервних копій (0 - все)"
 
 msgctxt "#30027"
 msgid "Dropbox"
-msgstr ""
+msgstr "Dropbox"
 
 msgctxt "#30028"
 msgid "Dropbox Key"
-msgstr ""
+msgstr "Ключ Dropbox"
 
 msgctxt "#30029"
 msgid "Dropbox Secret"
-msgstr ""
+msgstr "Секретный ключ Dropbox"
 
 msgctxt "#30030"
 msgid "User Addons"
-msgstr ""
+msgstr "Доповнення користувача "
 
 msgctxt "#30031"
 msgid "Addon Data"
-msgstr ""
+msgstr "Дані доповнень"
 
 msgctxt "#30032"
 msgid "Database"
@@ -122,63 +122,63 @@ msgstr "Список відтворювання"
 
 msgctxt "#30034"
 msgid "Thumbnails/Fanart"
-msgstr ""
+msgstr "Мініатюри/Фан-арт"
 
 msgctxt "#30035"
 msgid "Config Files"
-msgstr ""
+msgstr "Конфігураційні файли"
 
 msgctxt "#30036"
 msgid "Custom Directory 1"
-msgstr ""
+msgstr "Каталог користувача 1"
 
 msgctxt "#30037"
 msgid "Custom Directory 2"
-msgstr ""
+msgstr "Каталог користувача 2"
 
 msgctxt "#30038"
 msgid "Advanced Settings Detected"
-msgstr ""
+msgstr "Виявлено додаткові налаштування"
 
 msgctxt "#30039"
 msgid "The advancedsettings file should be restored first"
-msgstr ""
+msgstr "Файл з додатковими настройками повинен бути відновлений першим"
 
 msgctxt "#30040"
 msgid "Select Yes to restore this file and restart Kodi"
-msgstr ""
+msgstr "Натисніть \"Так\", щоб відновити цей файл і перезапустити Kodi"
 
 msgctxt "#30041"
 msgid "Select No to continue"
-msgstr ""
+msgstr "Натисніть \"Ні\" для продовження"
 
 msgctxt "#30042"
 msgid "Resume Restore"
-msgstr ""
+msgstr "Відновити відновлення"
 
 msgctxt "#30043"
 msgid "The Backup addon has detected an unfinished restore"
-msgstr ""
+msgstr "Kodi Backup виявив незакінчене відновлення з копії"
 
 msgctxt "#30044"
 msgid "Would you like to continue?"
-msgstr ""
+msgstr "Продовжити?"
 
 msgctxt "#30045"
 msgid "Error: Remote path doesn't exist"
-msgstr ""
+msgstr "Помилка: Мережевий шлях недоступний"
 
 msgctxt "#30046"
 msgid "Starting"
-msgstr ""
+msgstr "Початок"
 
 msgctxt "#30047"
 msgid "Local Dir"
-msgstr ""
+msgstr "Локальна папка"
 
 msgctxt "#30048"
 msgid "Remote Dir"
-msgstr ""
+msgstr "Мережева папка"
 
 msgctxt "#30049"
 msgid "Gathering file list"
@@ -186,59 +186,59 @@ msgstr ""
 
 msgctxt "#30050"
 msgid "Remote Path exists - may have old files in it!"
-msgstr ""
+msgstr "Видалений шлях існує - там можуть бути старі версії файлів!"
 
 msgctxt "#30051"
 msgid "Creating Files List"
-msgstr ""
+msgstr "Готується список файлів"
 
 msgctxt "#30052"
 msgid "Writing file"
-msgstr ""
+msgstr "Зберігаємо файл"
 
 msgctxt "#30053"
 msgid "Starting scheduled backup"
-msgstr ""
+msgstr "Починається резервне копіювання за розкладом"
 
 msgctxt "#30054"
 msgid "Removing backup"
-msgstr ""
+msgstr "Видалення резервної копії"
 
 msgctxt "#30056"
 msgid "Check log for Dropbox authorize URL"
-msgstr ""
+msgstr "Перевірте журнал Dropbox для URL авторизації"
 
 msgctxt "#30057"
 msgid "Click OK when authorized"
-msgstr ""
+msgstr "Натисніть OK, коли авторизуйтесь"
 
 msgctxt "#30058"
 msgid "Dropbox Developer Code Needed"
-msgstr ""
+msgstr "Потрібен код розробника Dropbox"
 
 msgctxt "#30059"
 msgid "Visit https://www.dropbox.com/developers"
-msgstr ""
+msgstr "Відвідайте https://www.dropbox.com/developers"
 
 msgctxt "#30060"
 msgid "Enable Scheduler"
-msgstr ""
+msgstr "Включити планувальник"
 
 msgctxt "#30061"
 msgid "Schedule"
-msgstr ""
+msgstr "Розклад"
 
 msgctxt "#30062"
 msgid "Hour of Day"
-msgstr ""
+msgstr "Час дня"
 
 msgctxt "#30063"
 msgid "Day of Week"
-msgstr ""
+msgstr "День тижня"
 
 msgctxt "#30064"
 msgid "Cron Schedule"
-msgstr ""
+msgstr "Планувальник"
 
 msgctxt "#30065"
 msgid "Sunday"
@@ -270,35 +270,35 @@ msgstr "Субота"
 
 msgctxt "#30072"
 msgid "Every Day"
-msgstr ""
+msgstr "Щодня"
 
 msgctxt "#30073"
 msgid "Every Week"
-msgstr ""
+msgstr "Щотижня"
 
 msgctxt "#30074"
 msgid "First Day of Month"
-msgstr ""
+msgstr "У перший день місяця"
 
 msgctxt "#30075"
 msgid "Custom Schedule"
-msgstr ""
+msgstr "Свій розклад"
 
 msgctxt "#30076"
 msgid "Shutdown After Backup"
-msgstr ""
+msgstr "Завершити роботу після резервного копіювання"
 
 msgctxt "#30077"
 msgid "Restart Kodi"
-msgstr ""
+msgstr "Перезапустити Kodi"
 
 msgctxt "#30078"
 msgid "You should restart Kodi to continue"
-msgstr ""
+msgstr "Необхідно перезапустити Kodi для продовження"
 
 msgctxt "#30079"
 msgid "Just Today"
-msgstr ""
+msgstr "Тільки сьогодні"
 
 msgctxt "#30080"
 msgid "Profiles"
@@ -306,85 +306,125 @@ msgstr "Профілі"
 
 msgctxt "#30081"
 msgid "Scheduler will run again on"
-msgstr ""
+msgstr "Планувальник буде запущений знову в"
 
 msgctxt "#30082"
 msgid "Progress Bar"
-msgstr ""
+msgstr "Смуга з ходом виконання"
 
 msgctxt "#30083"
 msgid "Background Progress Bar"
-msgstr ""
+msgstr "Хід виконання в фоні"
 
 msgctxt "#30084"
 msgid "None (Silent)"
-msgstr ""
+msgstr "Не виводити (Тихо)"
 
 msgctxt "#30085"
 msgid "Version Warning"
-msgstr ""
+msgstr "Попередження"
 
 msgctxt "#30086"
 msgid ""
 "This version of Kodi is different than the one used to create the archive"
-msgstr ""
+msgstr "Використовувана версія Kodi відрізняється від версії, використовуваної при створенні архіву"
 
 msgctxt "#30087"
 msgid "Compress Archives"
-msgstr ""
+msgstr "Архівувати"
 
 msgctxt "#30088"
 msgid "Copying Zip Archive"
-msgstr ""
+msgstr "Копіювати ZIP архів"
 
 msgctxt "#30089"
 msgid "Write Error Detected"
-msgstr ""
+msgstr "Виявлена помилка запису"
 
 msgctxt "#30090"
 msgid "The destination may not be writeable"
-msgstr ""
+msgstr "Місце призначення не доступно для запису"
 
 msgctxt "#30091"
 msgid "Zip archive could not be copied"
-msgstr ""
+msgstr "ZIP архів не може бути скопійований"
 
 msgctxt "#30092"
 msgid "Not all files were copied"
-msgstr ""
+msgstr "Не всі файли були скопійовані"
 
 msgctxt "#30093"
 msgid "Delete Authorization Info"
-msgstr ""
+msgstr "Видалити дані авторизації"
 
 msgctxt "#30094"
 msgid "This will delete any OAuth token files"
-msgstr ""
+msgstr "Ця операція видалить файли OAuth аутентифікації"
 
 msgctxt "#30095"
 msgid "Do you want to do this?"
-msgstr ""
+msgstr "Ви дійсно хочете це зробити?"
 
 msgctxt "#30096"
 msgid "Old Zip Archive could not be deleted"
-msgstr ""
+msgstr "Старий Zip архів не може бути знищено"
 
 msgctxt "#30097"
 msgid "This needs to happen before a backup can run"
-msgstr ""
+msgstr "Це потрібно зробити перед запуском резервного копіювання"
 
 msgctxt "#30098"
 msgid "Google Drive"
-msgstr ""
+msgstr "Google Drive"
 
 msgctxt "#30099"
 msgid "Open Settings"
-msgstr ""
+msgstr "Відкрити налаштування"
 
 msgctxt "#30100"
 msgid "Extracting Archive"
-msgstr ""
+msgstr "Витягуємо архів"
 
 msgctxt "#30101"
 msgid "Error extracting the zip archive"
-msgstr ""
+msgstr "Помилка при розпакуванні ZIP архіву"
+
+msgctxt "#30102"
+msgid "Click OK to enter code"
+msgstr "Натисніть OK, щоб ввести код"
+
+msgctxt "#30103"
+msgid "Validation Code"
+msgstr "Код перевірки"
+
+msgctxt "#30104"
+msgid "Authorize Now"
+msgstr "Авторизуйтесь зараз"
+
+msgctxt "#30105"
+msgid "Authorize this remote service in the settings first"
+msgstr "Спочатку авторизуйте цей віддалений сервіс в налаштуваннях"
+
+msgctxt "#30106"
+msgid "is authorized"
+msgstr "авторизований"
+
+msgctxt "#30107"
+msgid "error authorizing"
+msgstr "помилка авторизації"
+
+msgctxt "#30108"
+msgid "Visit https://console.developers.google.com/"
+msgstr "Відвідайте https://console.developers.google.com/"
+
+msgctxt "#30109"
+msgid "Run on startup if missed"
+msgstr "Запустити при запуску, якщо пропустив"
+
+msgctxt "#30110"
+msgid "Custom Directory 3"
+msgstr "Каталог користувача 3"
+
+msgctxt "#30111"
+msgid ""LibreELEC/CoreELEC Directorys"
+msgstr "Каталоги LibreELEC/CoreELEC"
