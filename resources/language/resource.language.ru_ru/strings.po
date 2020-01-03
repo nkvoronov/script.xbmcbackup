@@ -3,6 +3,9 @@
 # Addon id: script.xbmcbackup
 # Addon Provider: robweber, YLLOW_DRAGON
 # Translators:
+# Dmitry Vilesov <vilesovds@gmail.com>, 2014
+# Serge Rodionov <buzzzzer@gmail.com>, 2014,2016
+# TotalCaesar659 <x24cm5b8c54q6szxw@yandex.ru>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Addons\n"
@@ -10,7 +13,7 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2017-09-19 14:20+0000\n"
 "Last-Translator: TotalCaesar659 <x24cm5b8c54q6szxw@yandex.ru>\n"
-"Language-Team: Russian (http://www.transifex.com/teamxbmc/xbmc-addons/language/ru_RU/)\n"
+"Language-Team: Russian (http://www.transifex.com/teamxbmc/xbmc-addons/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -38,7 +41,7 @@ msgstr "Резервная копия Kodi"
 
 msgctxt "#30011"
 msgid "General"
-msgstr "Общие"
+msgstr "Основные"
 
 msgctxt "#30012"
 msgid "File Selection"
@@ -47,6 +50,14 @@ msgstr "Типы файлов"
 msgctxt "#30013"
 msgid "Scheduling"
 msgstr "Расписание"
+
+msgctxt "#30014"
+msgid "Simple"
+msgstr "Простой"
+
+msgctxt "#30015"
+msgid "Advanced"
+msgstr "Разширенный"
 
 msgctxt "#30016"
 msgid "Backup"
@@ -129,12 +140,12 @@ msgid "Config Files"
 msgstr "Конфигурационные файлы"
 
 msgctxt "#30036"
-msgid "Custom Directory 1"
-msgstr "Пользовательский каталог 1"
+msgid "Disclaimer"
+msgstr "Отказ"
 
 msgctxt "#30037"
-msgid "Custom Directory 2"
-msgstr "Пользовательский каталог 2"
+msgid "Canceling this menu will close and save changes"
+msgstr "Отмена этого меню закроет и сохранит изменения"
 
 msgctxt "#30038"
 msgid "Advanced Settings Detected"
@@ -205,16 +216,16 @@ msgid "Removing backup"
 msgstr "Удаление резервной копии"
 
 msgctxt "#30056"
-msgid "Check log for Dropbox authorize URL"
-msgstr "Проверьте журнал Dropbox для URL авторизации"
+msgid "Go to this URL to authorize"
+msgstr "Перейдите по этому URL для авторизации"
 
 msgctxt "#30057"
-msgid "Click OK when authorized"
-msgstr "Нажмите OK, когда авторизируйтесь"
+msgid "Click OK AFTER completion"
+msgstr "Нажмите ОК после завершения"
 
 msgctxt "#30058"
-msgid "Dropbox Developer Code Needed"
-msgstr "Нужен код разработчика Dropbox"
+msgid "Developer Code Needed"
+msgstr "Требуется код разработчика"
 
 msgctxt "#30059"
 msgid "Visit https://www.dropbox.com/developers"
@@ -343,7 +354,7 @@ msgstr "Обнаружена ошибка записи"
 
 msgctxt "#30090"
 msgid "The destination may not be writeable"
-msgstr "Место назначения не доступно для записи"
+msgstr "Место назначения не доступно для звписи"
 
 msgctxt "#30091"
 msgid "Zip archive could not be copied"
@@ -422,9 +433,154 @@ msgid "Run on startup if missed"
 msgstr "Запустить при запуске, если пропустил"
 
 msgctxt "#30110"
-msgid "Custom Directory 3"
-msgstr "Пользовательский каталог 3"
+msgid "Set Name"
+msgstr ""
 
 msgctxt "#30111"
-msgid ""LibreELEC/CoreELEC Directorys"
-msgstr "Каталоги LibreELEC/CoreELEC"
+msgid "Root folder selection"
+msgstr ""
+
+msgctxt "#30112"
+msgid "Browse Folder"
+msgstr ""
+
+msgctxt "#30113"
+msgid "Enter Own"
+msgstr ""
+
+msgctxt "#30114"
+msgid "starts in Kodi home"
+msgstr ""
+
+msgctxt "#30115"
+msgid "enter path to start there"
+msgstr ""
+
+msgctxt "#30116"
+msgid "Enter root path"
+msgstr ""
+
+msgctxt "#30117"
+msgid "Path Error"
+msgstr ""
+
+msgctxt "#30118"
+msgid "Path does not exist"
+msgstr ""
+
+msgctxt "#30119"
+msgid "Select root"
+msgstr ""
+
+msgctxt "#30120"
+msgid "Add Exclude Folder"
+msgstr ""
+
+msgctxt "#30121"
+msgid "Root Folder"
+msgstr ""
+
+msgctxt "#30122"
+msgid "Edit"
+msgstr ""
+
+msgctxt "#30123"
+msgid "Delete"
+msgstr ""
+
+msgctxt "#30124"
+msgid "Choose Action"
+msgstr ""
+
+msgctxt "#30125"
+msgid "Advanced Editor"
+msgstr ""
+
+msgctxt "#30126"
+msgid "Add Set"
+msgstr ""
+
+msgctxt "#30127"
+msgid "Delete Set"
+msgstr ""
+
+msgctxt "#30128"
+msgid "Are you sure you want to delete?"
+msgstr ""
+
+msgctxt "#30129"
+msgid "Exclude"
+msgstr ""
+
+msgctxt "#30130"
+msgid "The root folder cannot be changed"
+msgstr ""
+
+msgctxt "#30131"
+msgid "Choose Sets to Restore"
+msgstr ""
+
+msgctxt "#30132"
+msgid "Version 1.5.0 requires you to setup your file selections again - this is a breaking change"
+msgstr ""
+
+msgctxt "#30133"
+msgid "Game Saves"
+msgstr ""
+
+msgctxt "#30134"
+msgid "Include"
+msgstr ""
+
+msgctxt "#30135"
+msgid "Add Include Folder"
+msgstr ""
+
+msgctxt "#30136"
+msgid "Path must be within root folder"
+msgstr ""
+
+msgctxt "#30137"
+msgid "This path is part of a rule already"
+msgstr ""
+
+msgctxt "#30138"
+msgid "Set Name exists already"
+msgstr ""
+
+msgctxt "#30139"
+msgid "Copy Simple Config"
+msgstr ""
+
+msgctxt "#30140"
+msgid "This will copy the default Simple file selection to the Advanced Editor"
+msgstr ""
+
+msgctxt "#30141"
+msgid "This will erase any current Advanced Editor settings"
+msgstr ""
+
+msgctxt "#30142"
+msgid "Enable Verbose Logging"
+msgstr ""
+
+msgctxt "#30143"
+msgid "Exclude a specific folder from this backup set"
+msgstr ""
+
+msgctxt "#30144"
+msgid "Include a specific folder to this backup set"
+msgstr ""
+
+msgctxt "#30145"
+msgid "Type"
+msgstr ""
+
+msgctxt "#30146"
+msgid "Include Sub Folders"
+msgstr ""
+
+msgctxt "#30147"
+msgid "Toggle Sub Folders"
+msgstr ""
+
